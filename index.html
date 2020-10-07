@@ -3,12 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet"> 
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
     <title>Form with lists</title>
 </head>
 <body>
-    
+    <h1 class="main-title">Little lists project</h1>
+    <div class="container-main">
+        <div class="container-form">
+            <form action="" class="main-form">
+                <label class="note-title-label" for="title">Note title</label>
+                <input type="text" name="title" class="note-title" id="title">
+                <label class="selection-title-label" for="select">Pick the list</label>
+                <select placeholder= "A" name="list" class="select-list" id="select">
+                    <option selected disabled  value="" class="select-option">-list-</option>
+                    <option value="firstlist" class="select-option">To do</option>
+                    <option value="secondlist" class="select-option">Done</option>
+                </select>
+                <label class="textarea-label" for="notetext">Write down the note</label>
+                <textarea name="notetext" id="notetext" class="form-textarea"></textarea>
+                <input class ="form-button" type="button" value="Send">
+            </form>
+        </div>
+        <div class="container-lists">
+            <h2>TO DO</h2>
+            <h2>DONE</h2>
+            <div class="todo-list div-with-list"></div>
+            <div class="done-list div-with-list"></div>
+        </div>
+    </div>  
     <script src="js/scripts.js"></script>
 </body>
 </html>

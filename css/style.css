@@ -1,0 +1,123 @@
+body{
+    font-family: 'Raleway', sans-serif;
+    font-size: 0.8rem;
+}
+
+.main-title,
+.container-main{
+    margin: 0 auto;
+}
+.main-title{
+    font-size: 1.6rem;
+    text-align: center;
+    color: #35363b;
+    padding: 20px;
+    border-bottom: 1px solid #BDBDBD;
+    width: 900px;
+}
+
+.container-main{
+    margin-top: 30px;
+    width: 1000px;
+    height: 600px;
+    background-color: #BDBDBD;
+}
+
+.container-form{
+    height: 25%;
+}
+
+.main-form{
+    display: grid;
+    height: 100%;
+    grid-template-areas: "label1 label2"
+                         "target1 target2"
+                         "label3 label3"
+                         "text   text"
+                         "text   text"
+                         "button button";
+    align-items: flex-end;             
+    column-gap: 20px;     
+}
+
+
+.note-title-label,
+.selection-title-label,
+.note-title,
+.select-list{
+    width: 80%;
+    justify-self: center;
+}
+
+.note-title-label{
+    grid-area: label1;
+}
+.selection-title-label{
+    grid-area: label2;
+}
+.textarea-label{
+    grid-area: label3;
+    width: 95%;
+    justify-self: center;
+}
+.note-title{
+    grid-area: target1;
+
+}
+.select-list{
+    grid-area: target2;
+}
+.form-textarea{
+    grid-area: text;
+    width: 95%;
+    justify-self: center;
+    resize: none;
+}
+
+.form-button{
+    width: 80px;
+    grid-area: button;
+    justify-self: center;
+}
+
+.container-lists{
+    margin-top: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+h2{
+    text-align: center;
+    font-size: 1.2rem;
+    color: rgb(37, 59, 59);
+    text-shadow: darkslategrey 1px 0 10px;
+    padding: 20px;
+}
+
+.todo-list,
+.done-list,
+h2{
+    width: 45%;
+}
+
+.todo-list,
+.done-list{
+    background-color: floralwhite;
+    height: 350px;
+}
+
+.wrong-input{
+    background-color: #FFCDD2;
+}
+
+.div-in-list{
+    font-size: 0.9rem;
+    padding: 5px;
+}
+
+.div-in-list_h1{
+    font-size:  1.1rem;
+    font-weight: bold;
+    padding-bottom: 5px;
+}
